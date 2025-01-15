@@ -12,18 +12,18 @@ public class HandleWebAlert extends DriverSetup{
 
         driver.findElement(By.xpath("//button[@onclick='jsAlert()']")).click();
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         Alert alert = driver.switchTo().alert();
 
         System.out.println(alert.getText());
 
         alert.accept();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         driver.findElement(By.xpath("//button[@onclick='jsConfirm()']")).click();
         alert = driver.switchTo().alert();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         System.out.println(alert.getText());
 
         alert.dismiss();
@@ -32,7 +32,7 @@ public class HandleWebAlert extends DriverSetup{
         By jsPrompt = By.xpath("//button[@onclick='jsPrompt()']");
         driver.findElement(jsPrompt).click();
         alert = driver.switchTo().alert();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         System.out.println(alert.getText());
 
         alert.sendKeys("Hello");
