@@ -16,24 +16,24 @@ public class InteractingWithWebBrowser extends DriverSetup{
         String url = driver.getCurrentUrl();
         System.out.println(url);
         driver.manage().window().fullscreen();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.manage().window().minimize();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.manage().window().maximize();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.navigate().to("https://www.facebook.com");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.navigate().back();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.navigate().forward();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.navigate().refresh();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         driver.switchTo().newWindow(WindowType.TAB);
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.switchTo().newWindow(WindowType.WINDOW);
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
        String windowHandle = driver.getWindowHandle();
        System.out.println(windowHandle);
