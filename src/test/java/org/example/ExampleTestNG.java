@@ -7,11 +7,11 @@ import org.testng.asserts.SoftAssert;
 public class ExampleTestNG {
     @Test(priority = 1)
     public void testCase2() {
-        System.out.println("This is the A Normal Test Case 2");
+        System.out.println("This is the A Normal TestCase 2");
     }
     @Test(priority = 0)
     public void testCase1() {
-        System.out.println("This is the A Normal Test Case 1");
+        System.out.println("This is the A Normal TestCase 1");
     }
     @BeforeMethod
     public void beforeMethod() {
