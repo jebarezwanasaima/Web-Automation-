@@ -17,13 +17,13 @@ public class HandleSelectTag extends DriverSetup{
         Select select = new Select(selectElement);
 
         select.selectByIndex(2);
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         selectElement.click();
         select.selectByValue("option3");
         Thread.sleep(3000);
         selectElement.click();
         select.selectByVisibleText("Option1");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         List<WebElement> options =  select.getOptions();
 
