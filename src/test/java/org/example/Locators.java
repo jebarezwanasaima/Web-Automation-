@@ -16,7 +16,7 @@ public class Locators extends DriverSetup{
 //      searchBox = driver.findElement(By.className("gLFyf"));
         searchBox = driver.findElement(By.tagName("textarea"));
         searchBox.sendKeys("1");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         searchBox.clear();
         Thread.sleep(2000);
 //        WebElement howSearchWorkLink = driver.findElement(By.linkText("সার্চ কীভাবে কাজ করে"));
